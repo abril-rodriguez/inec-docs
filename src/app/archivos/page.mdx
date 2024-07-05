@@ -1,0 +1,54 @@
+import DeleteIcon from '@mui/icons-material/Delete'
+import Image from 'next/image'
+export const metadata = {
+  title: 'Archivos',
+  description:
+    'En esta sección podremos ver todos los clientes del sistema e información específica de cada uno de ellos.',
+}
+
+# Archivos
+
+Un archivo es un documento que puede estar asociado a un caso, a un cliente, a un gasto o a una tarea. Los archivos del sistema se guardan en una carpeta en google drive.
+
+## Funcionalidades
+
+Desde la sección de archivos podemos:
+
+1. Agregar un nuevo archivo.
+2. Ver un archivo.
+3. Eliminar un archivo.
+4. Navegar a la entidad relacionada.
+
+---
+
+## Nuevo archivo
+
+Podemos subir un nuevo archivo desde el botón **nuevo archivo**. Un archivo puede estar relacionado con un **caso**, un **cliente**, un **gasto** o una **tarea**.
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={700} height={500} />
+
+<Image src="/images/archivos-2.png" alt="Archivos" width={700} height={500} />
+
+---
+
+## Ver un archivo
+
+Al hacer click en la url del archivo nos redirigirá a su ubicación.
+
+<Image src="/images/archivos-3.png" alt="Archivos" width={700} height={500} />
+
+---
+
+## Eliminar un archivo
+
+Desde el botón de eliminar <DeleteIcon/> podemos eliminar un archivo.
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={700} height={500} />
+
+---
+
+## Navegar a la entidad relacionada
+
+Al hacer click en la entidad relacionada seremos redirigidos a la entidad a la que pertenece el archivo.
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={700} height={500} />

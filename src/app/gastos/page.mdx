@@ -1,0 +1,51 @@
+import FlashOnIcon from '@mui/icons-material/FlashOn'
+import ModeEditIcon from '@mui/icons-material/ModeEdit'
+import DeleteIcon from '@mui/icons-material/Delete'
+
+import Image from 'next/image'
+export const metadata = {
+  title: 'Gastos',
+  description:
+    'En esta sección podremos ver todos los clientes del sistema e información específica de cada uno de ellos.',
+}
+
+# Gastos
+
+Un caso involucra un **gasto**, que conlleva el desembolso de dinero o la utilización de recursos para cubrir necesidades, adquirir bienes o servicios, o realizar actividades que generen valor o satisfagan requisitos específicos. Todos estos gastos pueden ser registrados en el sistema para llevar un control de ellos. Es importante aclarar que el gasto pertenece a un caso. ¿que pasa si creo un gasto a un cliente que no tiene casos?{{ className: 'lead text-justify' }}
+
+## Funcionalidades
+
+Desde el módulo de gastos podemos:
+
+1. Registrar un nuevo gasto. El gasto siempre estará asociado a un caso de un cliente. Aquí se agregan de manera obligatoria el cliente, la categoría del gasto, el importe y la fecha.
+2. Desde el listado de gastos podemos:
+
+- Acceder a una vista rápida del gasto que permite ver toda su información.
+- Editar los datos de un gasto.
+- Eliminar un gasto.
+
+---
+
+## Nuevo gasto
+
+Podemos crear un nuevo gasto desde el botón en la esquina superior derecha.
+
+## <Image src="/images/gastos-1.png" alt="Gastos" width={700} height={500} />
+
+## Vista rápida de un gasto
+
+Desde el botón de vista rápida <FlashOnIcon/> podemos acceder a una vista rápida de los datos de un gasto.
+
+<Image src="/images/gastos-2.png" alt="Gastos" width={800} height={500} />
+
+## Editar un gasto
+
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de un gasto.
+
+<Image src="/images/gastos-3.png" alt="Gastos" width={700} height={500} />
+
+## Eliminar un gasto
+
+Desde el botón de eliminar <DeleteIcon/> podemos eliminar un gasto.
+
+<Image src="/images/gastos-4.png" alt="Gastos" width={700} height={500} />

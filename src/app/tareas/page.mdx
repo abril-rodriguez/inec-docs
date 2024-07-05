@@ -1,0 +1,109 @@
+import NoteAddIcon from '@mui/icons-material/NoteAdd'
+import ModeEditIcon from '@mui/icons-material/ModeEdit'
+import DeleteIcon from '@mui/icons-material/Delete'
+import VisibilityIcon from '@mui/icons-material/Visibility'
+import Image from 'next/image'
+export const metadata = {
+  title: 'Tareas',
+  description:
+    'En esta sección podremos ver todos los clientes del sistema e información específica de cada uno de ellos.',
+}
+
+# Tareas
+
+Una **tarea** se refiere a una actividad específica o un conjunto de acciones que se planifican y llevan a cabo con el fin de lograr un objetivo determinado dentro de un proyecto, proceso o sistema. Las tareas son unidades básicas de trabajo que deben completarse para avanzar hacia la finalización de un proyecto o para cumplir con un objetivo establecido.{{ className: 'lead text-justify' }}
+
+En el sistema hay dos maneras de crear tareas: {{ className: 'lead text-justify' }}
+
+1. Creando una desde el listado de tareas o desde la vista de un caso en particular. Esta será una tarea **independiente**.{{ className: 'lead text-justify' }}
+2. Convirtiendo los procedimientos de un proceso a tareas de un caso. Esta será una tarea de un proceso.{{ className: 'lead text-justify' }}
+
+## Funcionalidades
+
+Desde el módulo de tareas podemos:
+
+1. Registrar una nueva tarea. La tarea siempre está relacionada con un caso de un cliente.
+2. Desde el listado de tareas podemos:
+
+- Crear una tarea.
+- Cambiar el estado de una tarea.
+- Cambiar la prioridad de la tarea.
+- Añadir un archivo a la tarea.
+- Editar una tarea.
+- Eliminar una tarea.
+- Ver un listado de los cambios de la tarea.
+- Iniciar un temporizador para una tarea.
+
+---
+
+## Nueva tarea
+
+Una tarea siempre está relacionada con un caso de un cliente.
+
+Entre sus características fundamentales están el **estado y las dependencias**.
+Su **estado** hace referencia a la situación en la que se encuentra dicha tarea. Los posibles estados son: sin iniciar, en proceso o culminada.
+
+Las **dependencias** indican si esta tarea depende de otras o no. En el caso de que dependa de otra, hasta que dicha tarea no esté culminada, no se podrá cambiar el estado de la tarea actual. ¿de qué tareas puede depender?
+Sumando a esto, las tareas pueden requerir un archivo para su culminación por ende, si no se sube un archivo a dicha tarea, esta no podrá ser marcada como culminada.{{ className: 'text-justify' }}
+
+<Image src="/images/tareas-1.png" alt="Tareas" width={700} height={500} />
+
+---
+
+## Cambiar el estado de una tarea
+
+El estado puede ser cambiado desde el listado de tareas directamente.
+Dicho estado no podrá ser cambiado, es decir la tarea se encuentra bloqueada, en el caso de que:
+
+- La tarea requiera un archivo y aún no se haya subido.
+- La tarea dependa de otra que aún no está culminada.
+
+---
+
+## Cambiar la prioridad de una tarea
+
+La prioridad puede ser cambiada desde el listado de tareas directamente.
+Las prioridades posibles en las que se puede encontrar una tarea son: bajo, medio, alto, urgente.
+
+<Image src="/images/tareas-2.png" alt="Tareas" width={700} height={500} />
+
+---
+
+## Añadir un archivo a una tarea
+
+Desde el ícono de subir archivo <NoteAddIcon/> podemos subir archivos que sean relevantes para la tarea. Algunas tareas no podrán ser culminadas a menos que se haya subido un archivo relacionado.
+
+<Image src="/images/tareas-2.png" alt="Tareas" width={700} height={500} />
+
+---
+
+## Editar una tarea
+
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de una tarea.
+
+<Image src="/images/tareas-2.png" alt="Tareas" width={700} height={500} />
+
+---
+
+## Eliminar una tarea
+
+No se podrá eliminar una tarea en el caso de que la tarea esté bloqueada.
+
+<Image src="/images/tareas-2.png" alt="Tareas" width={700} height={500} />
+
+## Ver un listado de los cambios de la tarea
+
+Desde el ícono <VisibilityIcon/> podemos ver todas las modificaciones que sufrió la tarea. Esto nos permite visualizar un registro detallado de qué cambios se han realizado sobre la tarea y quién los hizo.{{ className: 'text-justify' }}
+
+<Image src="/images/tareas-3.png" alt="Tareas" width={700} height={500} />
+
+---
+
+## Iniciar un temporizador para una tarea
+
+Un temporizador es una herramienta que permite medir y gestionar el tiempo dedicado a completar una tarea específica. Su función principal es registrar la duración exacta desde el inicio hasta la finalización de la tarea, proporcionando así datos precisos sobre el tiempo empleado en su ejecución.{{ className: 'text-justify' }}
+
+En la esquina superior derecha podemos ver los temporizadores que se encuentran corriendo y agregar o quitar minutos. Sólo puede correrse un temporizador a la vez.
+Todos estos tiempos son registrados meticulosamente para generar informes detallados de tiempos en otra sección del sistema, permitiendo así visualizar con precisión los días y horarios en los cuales se han ejecutado las tareas.{{ className: 'text-justify' }}
+
+<Image src="/images/tareas-4.png" alt="Tareas" width={700} height={500} />

@@ -1,0 +1,38 @@
+import { Guía } from '@/components/Guía'
+import { Resources } from '@/components/Resources'
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'Documentación Velo CRM',
+  description: 'Este es un manual de usuario de Velo CRM',
+}
+
+export const sections = [
+  { title: 'Guía', id: 'guia' },
+  { title: 'Recursos', id: 'recursos' },
+]
+
+<HeroPattern />
+
+# Documentación Velo CRM
+
+Este es un manual de usuario de Velo CRM. Un manual de usuario es una guía esencial que ayuda a los usuarios a aprovechar al máximo el sistema, asegurando que puedan utilizarlo de manera efectiva y sin problemas. {{ className: 'lead' }}
+
+## Empecemos{{ anchor: false }}
+
+Para comenzar con este manual se debe tener una cuenta habilitada en el sitio. {{ className: 'lead' }}
+
+<div className="not-prose">
+  <Button
+    href="https://velo.brandfactors.com/"
+    variant="text"
+    arrow="right"
+    target="_blank"
+  >
+    <>Navegar al sitio</>
+  </Button>
+</div>
+
+<Guía />
+
+<Resources />
