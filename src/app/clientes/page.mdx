@@ -1,47 +1,30 @@
 import Image from 'next/image'
 export const metadata = {
   title: 'Clientes',
-  description:
-    'En esta sección podremos ver todos los clientes del sistema e información específica de cada uno de ellos.',
+  description: '',
 }
 
 # Clientes
 
-En el sistema, el término **cliente** se refiere a un usuario que interactúa con el sistema para obtener algún tipo de servicio, funcionalidad o información. Este usuario puede ser una persona física o una organización que consume los servicios proporcionados por el sistema en cuestión.{{ className: 'lead text-justify' }}
+En el sistema, el término **cliente** se refiere a un usuario que interactúa con el sistema para obtener algún tipo de servicio, funcionalidad o información. Este usuario puede ser una persona física o una jurídica (organización) que consume los servicios proporcionados por el sistema.{{ className: 'lead text-justify' }}
 
 ## Funcionalidades
 
 Desde el módulo de clientes podemos:
 
 1. Ver estadísticas de los clientes.
-
-- El total de clientes del sistema.
-- El total de contactos.
-- Los clientes y contactos activos e inactivos. ¿Cuándo un cliente está activo/inactivo?
-
-2. Agregar a un nuevo cliente ya sea una persona jurídica o no con los correspondientes datos de la empresa/persona particular y su información para la facturación.
-
-   En esta parte es posible agregar **contactos** a dicho cliente a quien le llegarán notificaciones por email de las actividades realizadas en el sistema. ¿Qué es un contacto? ¿Tiene acceso al sistema? {{ className: 'text-justify' }}
-
-3. Navegar a la vista de un cliente en particular para ver su datos en detalle y su correspondiente información en el sistema.
-   Aquí pueden encontrarse:
-
-- Casos en los que participa
-- Sus contactos
-- Sus facturas
-- Sus pagos
-- Sus propuestas
-- Sus proformas
-- Sus tareas
-- Sus gastos
-
-Además en esta sección es posible editar todos sus datos. {{ className: 'text-justify' }}
+2. Agregar a un nuevo cliente ya sea una persona física o jurídica.
+3. Navegar a la vista de un cliente en particular para ver su datos en detalle.
 
 ---
 
 ## Estadísticas
 
-    Estas estadísticas, ubicadas en la parte superior de la sección de clientes, muestran la cantidad de clientes y contactos totales y cuáles de ellos están activos e inactivos. {{ className: 'text-justify' }}
+Las estadísticas, ubicadas en la parte superior de la sección de clientes, muestran:
+
+- La cantidad de clientes y contactos totales.
+- La cantidad de clientes y contactos activos.
+- La cantidad de clientes y contactos inactivos.
 
 <Image src="/images/clientes-1.png" alt="Clientes" width={1000} height={800} />
 
@@ -49,9 +32,9 @@ Además en esta sección es posible editar todos sus datos. {{ className: 'text-
 
 ## Nuevo cliente
 
-Desde el botón **nuevo cliente** se puede crear un nuevo cliente ya sea una persona jurídica o no con los correspondientes datos de la empresa/persona particular y su información para la facturación.
+Desde el botón **nuevo cliente** podemos crear un nuevo cliente ya sea una persona física o jurídica con sus correspondientes datos y su información para la facturación. {{ className: 'text-justify' }}
 
-Desde aquí es posible agregar contactos a dicho cliente a quien le llegarán notificaciones por email de las actividades realizadas en el sistema. ¿Qué es un contacto? ¿Tiene acceso al sistema? {{ className: 'text-justify' }}
+En su creación es posible agregar **contactos** a dicho cliente, a quien le llegarán notificaciones por email de las actividades realizadas en el sistema. {{ className: 'text-justify' }}
 
 <Image src="/images/clientes-2.png" alt="Clientes" width={1000} height={800} />
 
@@ -59,9 +42,8 @@ Desde aquí es posible agregar contactos a dicho cliente a quien le llegarán no
 
 ## Ver detalles de un cliente
 
-Para navegar a la vista de un cliente en particular podemos hacer click su razón social desde el listado de clientes. Desde aquí podremos ver su datos en detalle y
-su correspondiente información en el sistema.
-Aquí pueden encontrarse:
+Para navegar a la vista de un cliente en particular podemos hacer click en su razón social desde el listado de clientes. Desde aquí podremos ver su datos en detalle y
+su correspondiente información en el sistema como por ejemplo: {{ className: 'text-justify' }}
 
 - Casos en los que participa
 - Sus contactos
@@ -72,6 +54,6 @@ Aquí pueden encontrarse:
 - Sus tareas
 - Sus gastos
 
-Además en esta sección es posible editar todos sus datos. {{ className: 'text-justify' }}
+En esta sección es posible editar todos los datos del cliente. {{ className: 'text-justify' }}
 
 <Image src="/images/clientes-3.png" alt="Clientes" width={1000} height={800} />

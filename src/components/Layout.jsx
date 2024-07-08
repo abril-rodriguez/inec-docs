@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useTheme } from 'next-themes' // Importa useTheme desde next-themes
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Navigation } from '@/components/Navigation'
@@ -11,6 +12,13 @@ import { SectionProvider } from '@/components/SectionProvider'
 
 export function Layout({ children, allSections }) {
   let pathname = usePathname()
+  const { resolvedTheme } = useTheme() // Obtén el tema actual desde next-themes
+
+  // Determina la ruta del logo basado en el tema actual
+  const logoSrc =
+    resolvedTheme === 'dark'
+      ? '/images/logo-light.svg'
+      : '/images/logo-dark.svg'
 
   return (
     <SectionProvider sections={allSections[pathname] ?? []}>
@@ -22,7 +30,7 @@ export function Layout({ children, allSections }) {
           <div className="contents lg:pointer-events-auto lg:block lg:w-72 lg:overflow-y-auto lg:border-r lg:border-zinc-900/10 lg:px-6 lg:pb-8 lg:pt-4 xl:w-80 lg:dark:border-white/10">
             <div className="hidden lg:flex">
               <Link href="/" aria-label="Home" className="text-2xl font-bold">
-                <Image src="/images/logo.svg" width={300} height={100}></Image>
+                <Image src={logoSrc} width={300} height={100} />
               </Link>
             </div>
             <Header />

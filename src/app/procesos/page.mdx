@@ -1,16 +1,20 @@
+import ModeEditIcon from '@mui/icons-material/ModeEdit'
+import DeleteIcon from '@mui/icons-material/Delete'
 import Image from 'next/image'
 export const metadata = {
   title: 'Procesos',
-  description:
-    'En esta sección podremos ver todos los clientes del sistema e información específica de cada uno de ellos.',
+  description: '',
 }
 
 # Procesos
 
-Un proceso se refiere a una serie estructurada y sistemática de acciones o pasos que se llevan a cabo de manera secuencial o simultánea para alcanzar un objetivo específico. Describen la serie de pasos que deben seguirse para tratar un caso en particular.
-Cada caso del sistema se clasifica según su tipo, que puede ser administrativo, judicial, laboral, entre otros. Cada tipo de caso conlleva procesos específicos asociados y cada proceso tiene procedimientos que se deben llevar a cabo.
-Un procedimiento puede entenderse como una guía o plantilla detallada que describe paso a paso cómo realizar una tarea específica de manera consistente y eficiente.
-Por ejemplo, si tengo un caso laboral, el proceso comúnmente conlleva ciertos procedimientos como la presentación de la demanda, notificación al empleador, entrevistas, etc.{{className:'text-justify'}}
+Un **proceso** se refiere a una serie estructurada y sistemática de acciones o pasos que se llevan a cabo de manera secuencial o simultánea para alcanzar un objetivo específico. Describen la serie de pasos que deben seguirse para tratar un caso en particular.{{className:'lead text-justify'}}
+
+Cada caso del sistema se clasifica según su tipo, que puede ser administrativo, judicial, laboral, entre otros. Cada tipo de caso conlleva procesos específicos asociados y cada proceso tiene procedimientos que se deben llevar a cabo.{{className:'lead text-justify'}}
+
+Un **procedimiento** puede entenderse como una guía o plantilla detallada que describe paso a paso cómo realizar una tarea específica de manera consistente y eficiente.
+Por ejemplo, si tengo un caso laboral, el proceso comúnmente conlleva ciertos procedimientos como la presentación de la demanda, notificación al empleador, entrevistas, etc.
+Al asignar tareas a un caso, si éste pertenece a un tipo que tiene un proceso definido con procedimientos específicos, podemos convertir directamente los procedimientos asociados a dicho proceso a tareas.{{className:'lead text-justify'}}
 
 ## Funcionalidades
 
@@ -31,6 +35,8 @@ Desde el módulo de procesos podemos:
 
 ## Nuevo proceso
 
+Desde el botón **crear proceso** podemos crear un nuevo proceso incluyendo nombre, descripción, cantidad de pasos, departamento y procesos hijos. {{className: "text-justify"}}
+
 <Image src="/images/procesos-1.png" alt="Procesos" width={1000} height={800} />
 
 <Image src="/images/procesos-2.png" alt="Procesos" width={1000} height={800} />
@@ -39,6 +45,45 @@ Desde el módulo de procesos podemos:
 
 ## Editar un proceso
 
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de un proceso.
+
+<Image src="/images/procesos-4.png" alt="Procesos" width={1000} height={800} />
+
 ---
 
 ## Eliminar un proceso
+
+Desde el botón de eliminar <DeleteIcon/> podemos eliminar un proceso.
+
+<Image src="/images/procesos-1.png" alt="Procesos" width={1000} height={800} />
+
+## Vista detalle de un proceso
+
+Al clickear sobre el nombre del proceso, accedemos a la vista detallada de todos los procedimientos que conforman dicho proceso. Desde aquí podemos agregar nuevos procedimientos, editarlos, eliminarlos y cambiar su orden.
+
+<Image src="/images/procesos-5.png" alt="Procesos" width={1000} height={800} />
+
+### Agregar procedimientos a un proceso
+
+Desde el botón **agregar procedimiento** podemos crear un nuevo procedimiento incluyendo nombre, número de paso, descripción y dependencias correspondientes.
+Las dependencias señalan qué otros procedimientos dentro del mismo proceso son necesarios para llevar a cabo dicho procedimiento.{{className: "text-justify"}}
+
+Un procedimiento puede tener **acciones**. Las acciones posibles son: crear un gasto, mandar un request, enviar un email o llenar un campo.{{className: "text-justify"}}
+
+A su vez, el procedimiento puede tener **recordatorios**. Un recordatorio es una herramienta o función diseñada para ayudar a las personas a recordar eventos importantes, tareas pendientes o cualquier otra información relevante en un momento específico o de manera periódica. Este recordatorio se envía en forma de notificación al usuario seleccionado en la fecha y horario especificado para recordarle acerca de este procedimiento.{{className: "text-justify"}}
+
+<Image src="/images/procesos-7.png" alt="Procesos" width={1000} height={800} />
+
+<Image src="/images/procesos-6.png" alt="Procesos" width={1000} height={800} />
+
+### Editar un procedimiento
+
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de un procedimiento.
+
+<Image src="/images/procesos-7.png" alt="Procesos" width={1000} height={800} />
+
+<Image src="/images/procesos-4.png" alt="Procesos" width={1000} height={800} />
+
+### Cambiar el orden de los procedimientos
+
+Para cambiar el orden de los procedimientos, se utiliza la función de arrastrar y soltar. Cada procedimiento está identificado por un número secuencial de pasos. Al agregar uno nuevo, se asigna automáticamente el siguiente número secuencial disponible después del último procedimiento existente. No se permite la duplicación de números de paso entre procedimientos.{{className: "text-justify"}}

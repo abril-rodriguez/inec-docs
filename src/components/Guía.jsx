@@ -5,12 +5,12 @@ const guides = [
   {
     href: '/clientes',
     name: 'Clientes',
-    description: 'Aprende a crear, editar o eliminar usuarios del sitio.',
+    description: 'Aprenda a crear, editar o eliminar usuarios del sitio.',
   },
   {
     href: '/casos',
     name: 'Casos',
-    description: 'Descubre cómo utilizar el componente clave del sitio.',
+    description: 'Descubra cómo utilizar el componente clave del sitio.',
   },
   {
     href: '/ventas',
@@ -20,28 +20,28 @@ const guides = [
   {
     href: '/gastos',
     name: 'Gastos',
-    description: 'Aprende sobre la gestión y registro de gastos en el sitio.',
+    description: 'Aprenda sobre la gestión y registro de gastos en el sitio.',
   },
   {
     href: '/tareas',
     name: 'Tareas',
-    description: 'Descubre cómo gestionar y completar tareas en el sitio.',
+    description: 'Descubra cómo gestionar y completar tareas en el sitio.',
   },
   {
     href: '/archivos',
     name: 'Archivos',
-    description: 'Aprende a gestionar y organizar archivos en el sitio.',
+    description: 'Aprenda a gestionar y organizar archivos en el sitio.',
   },
   {
     href: '/informes',
     name: 'Informes',
     description:
-      'Descubre cómo generar y analizar informes de tiempos del sitio.',
+      'Descubra cómo generar y analizar informes de tiempos del sitio.',
   },
   {
     href: '/procesos',
     name: 'Procesos',
-    description: 'Aprende a gestionar y optimizar procesos del sitio.',
+    description: 'Aprenda a gestionar y optimizar procesos del sitio.',
   },
   {
     href: '/equipos',

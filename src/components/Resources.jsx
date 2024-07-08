@@ -15,7 +15,7 @@ const resources = [
     href: '/casos',
     name: 'Casos',
     description:
-      'Aquí encontrarás todo lo que necesitas para dominar su uso, desde conceptos fundamentales hasta aplicaciones específicas.',
+      'Aquí encontrará todo lo que necesita para dominar su uso, desde conceptos fundamentales hasta aplicaciones específicas.',
     icon: UserIcon,
     pattern: {
       y: 16,
@@ -28,7 +28,7 @@ const resources = [
   {
     href: '/equipo',
     name: 'Equipo',
-    description: 'Aprende como crear y gestionar miembros del equipo.',
+    description: 'Aprenda a crear y gestionar miembros del equipo.',
     icon: UsersIcon,
     pattern: {
       y: 22,

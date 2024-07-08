@@ -5,19 +5,18 @@ import DeleteIcon from '@mui/icons-material/Delete'
 import Image from 'next/image'
 export const metadata = {
   title: 'Gastos',
-  description:
-    'En esta sección podremos ver todos los clientes del sistema e información específica de cada uno de ellos.',
+  description: '',
 }
 
 # Gastos
 
-Un caso involucra un **gasto**, que conlleva el desembolso de dinero o la utilización de recursos para cubrir necesidades, adquirir bienes o servicios, o realizar actividades que generen valor o satisfagan requisitos específicos. Todos estos gastos pueden ser registrados en el sistema para llevar un control de ellos. Es importante aclarar que el gasto pertenece a un caso. ¿que pasa si creo un gasto a un cliente que no tiene casos?{{ className: 'lead text-justify' }}
+Un caso involucra un **gasto**, que conlleva el desembolso de dinero o la utilización de recursos para cubrir necesidades, adquirir bienes o servicios, o realizar actividades que generen valor o satisfagan requisitos específicos. Todos estos gastos pueden ser registrados en el sistema para llevar un control de ellos. Es importante aclarar que el gasto pertenece a un caso.{{ className: 'lead text-justify' }}
 
 ## Funcionalidades
 
 Desde el módulo de gastos podemos:
 
-1. Registrar un nuevo gasto. El gasto siempre estará asociado a un caso de un cliente. Aquí se agregan de manera obligatoria el cliente, la categoría del gasto, el importe y la fecha.
+1. Registrar un nuevo gasto.
 2. Desde el listado de gastos podemos:
 
 - Acceder a una vista rápida del gasto que permite ver toda su información.
@@ -28,9 +27,9 @@ Desde el módulo de gastos podemos:
 
 ## Nuevo gasto
 
-Podemos crear un nuevo gasto desde el botón en la esquina superior derecha.
+Podemos crear un nuevo gasto desde el botón **registrar gasto**. El gasto puede estar relacionado a un cliente o a un caso.
 
-## <Image src="/images/gastos-1.png" alt="Gastos" width={700} height={500} />
+<Image src="/images/gastos-1.png" alt="Gastos" width={700} height={500} />
 
 ## Vista rápida de un gasto
 

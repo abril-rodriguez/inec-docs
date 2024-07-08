@@ -1,32 +1,196 @@
+import ModeEditIcon from '@mui/icons-material/ModeEdit'
+import DeleteIcon from '@mui/icons-material/Delete'
+import PaymentsIcon from '@mui/icons-material/Payments'
 import Image from 'next/image'
 export const metadata = {
   title: 'Ventas',
-  description:
-    'En esta sección podremos ver todos los clientes del sistema e información específica de cada uno de ellos.',
+  description: '',
 }
 
 # Ventas
 
-En el sistema, el término cliente se refiere a un usuario que interactúa con el sistema para obtener algún tipo de servicio, funcionalidad o información. Este usuario puede ser una persona física o una organización consume los servicios proporcionados por el sistema en cuestión.
+El módulo de **ventas** proporciona las herramientas necesarias para gestionar de manera eficiente todo el ciclo de ventas de la empresa. Desde la creación de **propuestas** y **proformas**, hasta la emisión de **facturas**, **notas de crédito** y el registro de **cobros**, este módulo centraliza y automatiza las operaciones comerciales, asegurando la precisión en los documentos financieros y facilitando el seguimiento detallado de cada transacción. Además, facilita la integración contable y la generación de análisis estratégicos que optimizan la toma de decisiones comerciales. El ciclo inicia con la creación de propuestas para clientes, seguida por la generación de proformas que detallan los términos acordados. Finalmente, se emite la factura que formaliza la transacción. {{className:'lead text-justify'}}
 
 ## Funcionalidades
+
+Desde el módulo de ventas podemos:
+
+1. Crear, editar y eliminar propuestas.
+2. Crear, editar y eliminar proformas.
+3. Administrar facturas.
+4. Crear, editar, eliminar notas de crédito.
+5. Registrar, asignar pagos y eliminar cobros.
 
 ---
 
 ## Propuestas
 
----
+Una **propuesta** es un documento formal que presenta una oferta detallada de productos o servicios a un cliente potencial. Desde la sección de propuestas podemos: {{className:'text-justify'}}
+
+- Crear una nueva propuesta.
+- Editar una propuesta.
+- Eliminar una propuesta.
+- Convertir una propuesta a una proforma.
+
+<Image src="/images/ventas-1.png" alt="Propuesta" width={1000} height={800} />
+
+### Crear una propuesta
+
+Desde el botón **registrar propuesta** podemos crear una nueva propuesta. En ella se incluyen los datos de la propuesta, la información del cliente y el detalle de artículos.{{className:'text-justify'}}
+
+<Image src="/images/ventas-2.png" alt="Propuesta" width={1000} height={800} />
+<Image src="/images/ventas-3.png" alt="Propuesta" width={1000} height={800} />
+<Image src="/images/ventas-4.png" alt="Propuesta" width={1000} height={800} />
+
+### Editar una propuesta
+
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de una propuesta.
+
+<Image src="/images/ventas-5.png" alt="Propuesta" width={1000} height={800} />
+
+### Eliminar una propuesta
+
+Desde el ícono de eliminar <DeleteIcon /> podemos eliminar una propuesta.
+
+<Image src="/images/ventas-1.png" alt="Propuesta" width={1000} height={800} />
+
+### Convertir una propuesta a una proforma
+
+Al clickear sobre el ID de la propuesta podemos acceder a una vista detallada de ella donde se muestran todos sus datos y la opción de convertir dicha propuesta en una proforma.
+Desde el botón **convertir a proforma** convertiremos dicha propuesta en una proforma. {{className:'text-justify'}}
+
+<Image src="/images/ventas-6.png" alt="Propuesta" width={1000} height={800} />
 
 ## Proformas
 
----
+Una **proforma** es un documento comercial provisional que detalla los productos o servicios ofrecidos junto con sus costos estimados. Se emite antes de la confirmación final de una transacción, proporcionando a los clientes una estimación clara de lo que se espera que paguen. A diferencia de una factura, una proforma no es legalmente vinculante y puede ser modificada antes de convertirse en una transacción finalizada.
+Una proforma puede ser creada de dos maneras:{{className:'text-justify'}}
+
+1. Convirtiendo una propuesta a proforma.
+2. Creando una nueva proforma.
+
+Desde la sección de proformas podemos:
+
+- Crear una nueva proforma.
+- Editar una proforma.
+- Eliminar una proforma.
+- Convertir una proforma a una factura.
+
+<Image src="/images/ventas-7.png" alt="Proforma" width={1000} height={800} />
+
+### Crear una proforma
+
+Desde el botón **registrar proforma** podemos crear una nueva proforma. En ella se incluyen los datos de la proforma, la información del cliente y el detalle de artículos.{{className:'text-justify'}}
+
+<Image src="/images/ventas-8.png" alt="Proforma" width={1000} height={800} />
+<Image src="/images/ventas-9.png" alt="Proforma" width={1000} height={800} />
+<Image src="/images/ventas-10.png" alt="Proforma" width={1000} height={800} />
+
+### Editar una proforma
+
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de una proforma.{{className:'text-justify'}}
+
+<Image src="/images/ventas-11.png" alt="Proforma" width={1000} height={800} />
+
+### Eliminar una proforma
+
+Desde el ícono de eliminar <DeleteIcon /> podemos eliminar una proforma.{{className:'text-justify'}}
+
+<Image src="/images/ventas-7.png" alt="Proforma" width={1000} height={800} />
+
+### Convertir una proforma a una factura
+
+Al clickear sobre el ID de la proforma podemos acceder a una vista detallada de ella donde se muestran todos sus datos y la opción de convertir dicha proforma en una proforma.
+Desde el botón **convertir a proforma** convertiremos dicha proforma en una proforma.{{className:'text-justify'}}
+
+<Image src="/images/ventas-12.png" alt="Propuesta" width={1000} height={800} />
 
 ## Facturas
 
----
+Una **factura** es un documento comercial que detalla la venta de bienes o servicios, indicando el precio, impuestos aplicables, y otras condiciones de la transacción. Sirve como prueba de la operación y facilita el registro contable tanto para el vendedor como para el comprador. Desde la sección de facturas podemos:{{className:'text-justify'}}
+
+- Ver detalles e imprimir factura.
+- Listado de cobros de una factura.
+- Listado de créditos de una factura.
+- Crear tareas a una factura.
+
+<Image src="/images/ventas-13.png" alt="Propuesta" width={1000} height={800} />
+
+### Ver detalles e imprimir factura
+
+Al clickear sobre el ID de la factura podemos acceder a una vista detallada de ella.
+
+<Image src="/images/ventas-14.png" alt="Propuesta" width={1000} height={800} />
+
+### Listado de cobros de una factura
+
+Desde el listado de cobros podemos ver todos aquellos pagos que el cliente realizó para cancelar su deuda.
+
+<Image src="/images/ventas-15.png" alt="Propuesta" width={1000} height={800} />
+
+### Listado de créditos de una factura
+
+Desde el listado de créditos podemos ver todas aquellas notas de crédito que posee dicha factura. Las notas de crédito son creadas desde la sección de **notas de crédito**.{{className:'text-justify'}}
+
+<Image src="/images/ventas-16.png" alt="Propuesta" width={1000} height={800} />
+
+### Crear tareas a una factura
+
+Desde aquí podemos crear tareas relacionadas a dicha factura. Puede verse el funcionamiento en detalle desde la sección <a href="/tareas">tareas</a>.
+
+<Image src="/images/ventas-17.png" alt="Propuesta" width={1000} height={800} />
 
 ## Notas de crédito
+
+Una **nota de crédito** es un documento emitido por un vendedor a un comprador para corregir errores en una factura previamente emitida. Se utiliza para ajustar el monto adeudado por el comprador, ya sea para devolver dinero, otorgar crédito para futuras compras, o corregir errores como cantidades incorrectas o precios erróneos. Es una herramienta importante para mantener registros precisos y resolver disputas comerciales de manera justa y eficiente. Desde esta sección podemos:{{className:'text-justify'}}
+
+1. Registrar una nueva nota de crédito.
+2. Editar una nota de crédito.
+3. Eliminar una nota de crédito.
+
+   <Image
+     src="/images/ventas-18.png"
+     alt="Propuesta"
+     width={1000}
+     height={800}
+   />
+
+### Registrar una nueva nota de crédito
+
+Desde el botón **registrar nota de cŕedito** podemos crear una nueva nota de crédito.
+
+<Image src="/images/ventas-18.png" alt="Propuesta" width={1000} height={800} />
+
+La nota corresponde al caso de un cliente, para aplicar esta a una factura es necesario entrar en la vista detalle de la nota y **aplicarla a la factura**.
+
+<Image src="/images/ventas-20.png" alt="Propuesta" width={1000} height={800} />
+<Image src="/images/ventas-21.png" alt="Propuesta" width={1000} height={800} />
+<Image src="/images/ventas-22.png" alt="Propuesta" width={1000} height={800} />
 
 ---
 
 ## Cobros
+
+Un **cobro** se refiere al proceso de recibir el pago de una deuda o de una transacción comercial. Desde la sección de cobros podemos:{{className:'text-justify'}}
+
+1. Agregar un nuevo cobro.
+2. Asignar un pago a un cobro.
+3. Eliminar un cobro.
+
+<Image src="/images/ventas-23.png" alt="Propuesta" width={1000} height={800} />
+
+### Agregar un nuevo cobro
+
+Desde el botón **agregar nuevo cobro** podemos crear un nuevo cobro.
+
+<Image src="/images/ventas-24.png" alt="Propuesta" width={1000} height={800} />
+Una vez creado, es necesario relacionarlo con una factura, asignándole un pago
+desde el botón <PaymentsIcon />. Ingresaremos el importe correspondiente de la
+factura relacionada.
+
+<Image src="/images/ventas-25.png" alt="Propuesta" width={1000} height={800} />
+<Image src="/images/ventas-26.png" alt="Propuesta" width={1000} height={800} />
+
+### Eliminar un cobro
+
+Desde el botón <DeleteIcon/> podemos eliminar un cobro.
