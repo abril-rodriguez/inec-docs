@@ -16,6 +16,8 @@ Un **procedimiento** puede entenderse como una guía o plantilla detallada que d
 Por ejemplo, si tengo un caso laboral, el proceso comúnmente conlleva ciertos procedimientos como la presentación de la demanda, notificación al empleador, entrevistas, etc.
 Al asignar tareas a un caso, si éste pertenece a un tipo que tiene un proceso definido con procedimientos específicos, podemos convertir directamente los procedimientos asociados a dicho proceso a tareas.{{className:'lead text-justify'}}
 
+Un proceso puede tener **procesos hijos**, es decir procesos que se desprenden de él. Al crear las tareas desde el proceso en el caso, si marcamos la última tarea como culminada se podrá seleccionar el proceso hijo siguiente. Esta metodología permite crear distintos caminos a través de los procesos dependientes del caso en cuestión.{{className:'lead text-justify'}}
+
 ## Funcionalidades
 
 Desde el módulo de procesos podemos:
@@ -30,6 +32,8 @@ Desde el módulo de procesos podemos:
 - Editar un procedimiento.
 - Eliminar el procedimiento.
 - Cambiar el orden de los procedimientos.
+
+6. Asignar procesos hijos.
 
 ---
 
@@ -87,3 +91,32 @@ Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de un 
 ### Cambiar el orden de los procedimientos
 
 Para cambiar el orden de los procedimientos, se utiliza la función de arrastrar y soltar. Cada procedimiento está identificado por un número secuencial de pasos. Al agregar uno nuevo, se asigna automáticamente el siguiente número secuencial disponible después del último procedimiento existente. No se permite la duplicación de números de paso entre procedimientos.{{className: "text-justify"}}
+
+## Procesos hijos
+
+Un proceso puede tener **procesos hijos**, es decir procesos que se desprenden de él. Al crear las tareas desde el proceso en el caso, si marcamos la última tarea como culminada se podrá seleccionar el proceso hijo siguiente. Esta metodología permite crear distintos caminos a través de los procesos dependientes del caso en cuestión.{{className:'text-justify'}}
+
+### Agregar un proceso hijo
+
+Al crear un proceso, podemos seleccionar sus procesos hijos. En este listado aparecerán todos los procesos existentes. Un proceso puede tener ninguno, uno o más de un proceso hijo.{{className:'text-justify'}}
+
+<Image src="/images/procesos-8.png" alt="Procesos" width={1000} height={800} />
+
+### Definir caminos entre procesos
+
+Tenemos un caso de tipo corporativo, y creamos las tareas desde el proceso. Estas tres tareas pertenecen al proceso corporativo.{{className:'text-justify'}}
+
+<Image src="/images/procesos-9.png" alt="Procesos" width={1000} height={800} />
+
+Al marcar la última tarea del proceso como culminado podemos seleccionar el proceso siguiente y se crearán las tareas correspondientes.{{className:'text-justify'}}
+
+<Image src="/images/procesos-10.png" alt="Procesos" width={1000} height={800} />
+
+Ahora tendremos las tareas del proceso corporativo sumado a las del proceso judicial. Los distintos colores hacen referencia a que las tareas pertenecen a distintos procesos.{{className:'text-justify'}}
+Desde el listado de tareas podemos cambiar el orden de las tareas incluso aunque estas pertenezcan a distintos procesos.{{className:'text-justify'}}
+
+<Image src="/images/procesos-11.png" alt="Procesos" width={1000} height={800} />
+
+En el detalle del caso podemos ver los distintos procesos que lo conforman y cuántas tareas de cada proceso han sido culminadas.{{className:'text-justify'}}
+
+<Image src="/images/procesos-12.png" alt="Procesos" width={1000} height={800} />
