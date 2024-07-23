@@ -48,6 +48,11 @@ const guides = [
     name: 'Equipos',
     description: 'Explora cómo gestionar equipos y colaboradores en el sitio.',
   },
+  {
+    href: '/mails',
+    name: 'Plantilla de mails',
+    description: 'Aprende cómo crear plantillas de emails en el sitio.',
+  },
 ]
 
 export function Guía() {

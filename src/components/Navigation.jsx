@@ -205,6 +205,7 @@ export const navigation = [
       { title: 'Informes', href: '/informes' },
       { title: 'Procesos', href: '/procesos' },
       { title: 'Equipo', href: '/equipo' },
+      { title: 'Plantilla de emails', href: '/emails' },
     ],
   },
 ]
