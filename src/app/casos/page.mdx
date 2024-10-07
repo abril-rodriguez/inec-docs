@@ -136,3 +136,20 @@ Una **factura** es un documento comercial que detalla la venta de bienes o servi
 El caso conlleva ciertos **gastos** que pueden ser documentados desde el apartado de gastos para llevar un registro preciso de los costes de dicho caso. Desde aquí podremos acceder a una vista rápida, editar un gasto o eliminarlo.{{ className: 'text-justify' }}
 
 <Image src="/images/casos-11.png" alt="Casos" width={1096} height={2053} />
+
+---
+## Registrar apoderados de un caso
+
+Los casos tienen tres posibles participantes: demandado, demandante y fiador. El último no es obligatorio al crear un caso. {{ className: 'text-justify' }}
+Un demandante, es decir aquella persona que demanda, puede tener un apoderado. Un apoderado es la persona que tiene la capacidad jurídica para actuar en nombre y por cuenta de otra. El apoderamiento debe realizarse mediante lo que se denomina un poder. {{ className: 'text-justify' }}
+Esta información es requerida para poder generar el documento del caso.{{ className: 'text-justify' }}
+Requerimientos: 
+- Al menos un demandado que sea persona no jurídica.
+- Al menos un demandante que sea persona jurídica.
+- Apoderado del demandante que sea persona no jurídica. De este apoderado también se necesitan los datos de la relación con el demandante.
+En caso de que, al momento de generar el documento del caso, alguno de estos datos no esté, se abrirá un modal con los campos faltantes.{{ className: 'text-justify' }}
+
+<Image src="/images/casos-12.png" alt="Casos" width={925} height={444} />
+<Image src="/images/casos-13.png" alt="Casos" width={1181} height={463} />
+
+---
