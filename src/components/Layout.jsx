@@ -15,10 +15,7 @@ export function Layout({ children, allSections }) {
   const { resolvedTheme } = useTheme() // Obtén el tema actual desde next-themes
 
   // Determina la ruta del logo basado en el tema actual
-  const logoSrc =
-    resolvedTheme === 'dark'
-      ? '/images/logo-light.svg'
-      : '/images/logo-dark.svg'
+  const logoSrc = '/images/brandfactors.png'
 
   return (
     <SectionProvider sections={allSections[pathname] ?? []}>
@@ -29,7 +26,11 @@ export function Layout({ children, allSections }) {
         >
           <div className="contents lg:pointer-events-auto lg:block lg:w-72 lg:overflow-y-auto lg:border-r lg:border-zinc-900/10 lg:px-6 lg:pb-8 lg:pt-4 xl:w-80 lg:dark:border-white/10">
             <div className="hidden lg:flex">
-              <Link href="/" aria-label="Home" className="text-2xl font-bold">
+              <Link
+                href="/"
+                aria-label="Home"
+                className="mt-4 text-2xl font-bold"
+              >
                 <Image src={logoSrc} width={300} height={100} />
               </Link>
             </div>
