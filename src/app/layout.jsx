@@ -7,8 +7,8 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Velo CRM',
-    default: 'Velo CRM',
+    template: '%s - Brandfactors CRM',
+    default: 'Brandfactors CRM',
   },
 }
 
