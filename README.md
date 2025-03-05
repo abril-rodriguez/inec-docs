@@ -1,4 +1,4 @@
-# Brandfactors Documentación
+# INEC Documentación
 
 ## Getting started
 

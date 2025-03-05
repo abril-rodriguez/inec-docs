@@ -15,7 +15,7 @@ export function Layout({ children, allSections }) {
   const { resolvedTheme } = useTheme() // Obtén el tema actual desde next-themes
 
   // Determina la ruta del logo basado en el tema actual
-  const logoSrc = '/images/brandfactors.png'
+  const logoSrc = '/images/logo.png'
 
   return (
     <SectionProvider sections={allSections[pathname] ?? []}>
