@@ -12,10 +12,10 @@ import { UsersIcon } from '@/components/icons/UsersIcon'
 
 const resources = [
   {
-    href: '/casos',
-    name: 'Casos',
+    href: '/proyectos',
+    name: 'Proyectos',
     description:
-      'Aquí encontrará todo lo que necesita para dominar su uso, desde conceptos fundamentales hasta aplicaciones específicas.',
+      'Aquí encontrará todo lo que necesita para dominar su proyecto, desde conceptos fundamentales hasta aplicaciones específicas.',
     icon: UserIcon,
     pattern: {
       y: 16,

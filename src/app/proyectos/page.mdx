@@ -1,0 +1,112 @@
+import FlashOnIcon from '@mui/icons-material/FlashOn'
+import ModeEditIcon from '@mui/icons-material/ModeEdit'
+import EditNoteIcon from '@mui/icons-material/EditNote'
+import DeleteIcon from '@mui/icons-material/Delete'
+import DescriptionIcon from '@mui/icons-material/Description'
+import Image from 'next/image'
+export const metadata = {
+  title: 'Proyectos',
+  description: '',
+}
+
+# Proyectos
+
+Un **proyecto** en el ámbito legal es una disputa o controversia entre partes que se resuelve a través del sistema judicial, basado en hechos y argumentos legales específicos.
+Cada proyecto se clasifica según su tipo, que puede ser administrativo, judicial, laboral, entre otros. Cada tipo de proyecto conlleva **procesos** específicos asociados y cada proceso tiene **procedimientos** que se deben llevar a cabo.{{ className: 'lead text-justify' }}
+
+Un **procedimiento** puede entenderse como una guía o plantilla detallada que describe paso a paso cómo realizar una tarea específica de manera consistente y eficiente. Por ejemplo, en un proyecto laboral el proceso comúnmente conlleva ciertos procedimientos como la presentación de la demanda, notificación al empleador, entrevistas, etc.{{ className: 'lead text-justify' }}
+
+Al asignar tareas a un proyecto, si éste pertenece a un tipo que tiene un proceso definido con procedimientos específicos, podemos convertir directamente los procedimientos asociados a dicho proceso a tareas con solo un botón. Además, usted tiene la opción de crear tareas adicionales que sean específicas y relevantes para ese proyecto en particular. {{ className: 'lead text-justify' }}
+
+## Funcionalidades
+
+Desde el módulo de proyectos podemos:
+
+1. Ver estadísticas de los proyectos.
+2. Crear un nuevo proyecto.
+3. Desde el listado de proyectos podemos:
+   - Acceder a una vista rápida para ver detalles del proyecto.
+   - Agregar notas a un proyecto.
+   - Copiar un proyecto.
+
+---
+
+## Estadísticas
+
+Las estadísticas, ubicadas en la parte superior de la sección de proyectos, muestran la cantidad de proyectos en cada uno de los estados posibles: {{ className: 'text-justify' }}
+
+- La cantidad de proyectos **no iniciados**.
+- La cantidad de proyectos **en desarrollo**.
+- La cantidad de proyectos **en espera**.
+- La cantidad de proyectos **finalizados**.
+- La cantidad de proyectos **cancelados**.
+
+<Image src="/images/proyectos-1.png" alt="Proyectos" width={1093} height={796} />
+
+---
+
+## Nuevo proyecto
+
+Desde el botón **nuevo proyecto** podemos crear un proyecto incluyendo sus datos. {{className: "text-justify"}}
+
+<Image src="/images/proyectos-2.png" alt="Proyectos" width={747} height={617} />
+
+---
+
+## Vista rápida de un proyecto
+
+Desde el botón de vista rápida <FlashOnIcon/> podemos acceder a una vista rápida de los datos de un proyecto.
+
+<Image src="/images/proyectos-3.png" alt="Proyectos" width={817} height={569} />
+
+
+## Agregar notas a un proyecto
+
+Desde el botón de notas <EditNoteIcon/> podemos agregar una nota a un proyecto. Dichas notas sirven para aclarar, explicar o comentar algo. {{ className: 'text-justify' }}
+
+<Image src="/images/proyectos-1.png" alt="Proyectos" width={1008} height={418} />
+
+---
+
+## Vista detalle de un proyecto
+
+Podemos acceder a la vista detalle de un proyecto al hacer click sobre el nombre del proyecto.
+
+<Image src="/images/proyectos-4.png" alt="Proyectos" width={1096} height={1063} />
+
+
+## Editar un proyecto
+
+Haciendo click en el nombre de un proyecto accedemos Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de un caso.
+
+<Image src="/images/proyectos-4.png" alt="Proyectos" width={1008} height={418} />
+
+## Eliminar un proyecto
+
+Desde el botón de eliminar <DeleteIcon/> podemos eliminar un proyecto.
+
+<Image src="/images/proyectos-4.png" alt="Proyectos" width={1008} height={418} />
+
+### Ver y agregar tareas al proyecto
+
+Las **tareas** son las actividades necesarias a realizar para completar el proyecto. Como mencionamos anteriormente, al asignar tareas a un proyecto, si éste pertenece a un tipo que tiene un proceso definido, podemos convertir directamente los procedimientos de dicho proceso a tareas utilizando el botón azul correspondiente. Además, tenemos la opción de crear tareas adicionales, independientes de las tareas de un proceso, que sean específicas y relevantes para este proyecto en particular. Para más detalles, puede dirigirse a la sección <a href="/tareas">tareas</a>.{{ className: 'text-justify' }}
+
+<Image src="/images/proyectos-5.png" alt="Proyectos" width={1100} height={938} />
+
+### Listado de archivos correspondientes al proyecto
+
+Los archivos son documentos digitales que tienen alguna relevancia para el proyecto como documentación legal, imágenes, etc. Al hacer click en su url podemos ver el archivo.{{ className: 'text-justify' }}
+
+<Image src="/images/proyectos-6.png" alt="Proyectos" width={1099} height={529} />
+
+### Registrar gastos
+
+El proyecto conlleva ciertos **gastos** que pueden ser documentados desde el apartado de gastos para llevar un registro preciso de los costes de dicho proyecto. Desde aquí podremos acceder a una vista rápida, editar un gasto o eliminarlo.{{ className: 'text-justify' }}
+
+<Image src="/images/proyectos-7.png" alt="Proyectos" width={1096} height={2053} />
+
+### Registrar notas
+
+El proyecto conlleva ciertas **notas** que pueden ser documentadas desde el apartado de notas. Desde aquí podremos acceder a un historial de todas las notas del proyecto.{{ className: 'text-justify' }}
+
+<Image src="/images/proyectos-8.png" alt="Proyectos" width={1096} height={2053} />

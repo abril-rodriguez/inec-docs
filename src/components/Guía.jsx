@@ -3,19 +3,14 @@ import { Heading } from '@/components/Heading'
 
 const guides = [
   {
-    href: '/clientes',
-    name: 'Clientes',
-    description: 'Aprenda a crear, editar o eliminar usuarios del sitio.',
+    href: '/colaboradores',
+    name: 'Colaboradores',
+    description: 'Aprenda a crear, editar o eliminar colaboradores del sitio.',
   },
   {
-    href: '/casos',
-    name: 'Casos',
+    href: '/proyectos',
+    name: 'Proyectos',
     description: 'Descubra cómo utilizar el componente clave del sitio.',
-  },
-  {
-    href: '/ventas',
-    name: 'Ventas',
-    description: 'Explora las funcionalidades ofrecidas en esta sección.',
   },
   {
     href: '/gastos',
@@ -28,31 +23,21 @@ const guides = [
     description: 'Descubra cómo gestionar y completar tareas en el sitio.',
   },
   {
-    href: '/archivos',
-    name: 'Archivos',
-    description: 'Aprenda a gestionar y organizar archivos en el sitio.',
-  },
-  {
     href: '/informes',
     name: 'Informes',
     description:
       'Descubra cómo generar y analizar informes de tiempos del sitio.',
   },
   {
-    href: '/procesos',
-    name: 'Procesos',
-    description: 'Aprenda a gestionar y optimizar procesos del sitio.',
+    href: '/utilidades',
+    name: 'Utilidades',
+    description: 'Aprenda a gestionar y optimizar las utilidades del sitio.',
   },
   {
-    href: '/equipos',
-    name: 'Equipos',
+    href: '/equipo',
+    name: 'Equipo',
     description: 'Explora cómo gestionar equipos y colaboradores en el sitio.',
-  },
-  {
-    href: '/mails',
-    name: 'Plantilla de mails',
-    description: 'Aprende cómo crear plantillas de emails en el sitio.',
-  },
+  }
 ]
 
 export function Guía() {
