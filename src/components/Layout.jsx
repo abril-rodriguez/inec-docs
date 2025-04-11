@@ -15,8 +15,8 @@ export function Layout({ children, allSections }) {
   const { resolvedTheme } = useTheme() // Obtén el tema actual desde next-themes
 
   // Determina la ruta del logo basado en el tema actual
-  const logoSrc = '/images/brandfactors.png'
-
+  const logoSrc = resolvedTheme === 'dark' ? '/images/logo-white.png' : '/images/logo.png';
+  
   return (
     <SectionProvider sections={allSections[pathname] ?? []}>
       <div className="h-full lg:ml-72 xl:ml-80">

@@ -1,0 +1,253 @@
+import NoteAddIcon from '@mui/icons-material/NoteAdd'
+import ModeEditIcon from '@mui/icons-material/ModeEdit'
+import DeleteIcon from '@mui/icons-material/Delete'
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import VisibilityIcon from '@mui/icons-material/Visibility'
+import Image from 'next/image'
+export const metadata = {
+  title: 'Utilidades',
+}
+
+# Utilidades
+
+---
+
+## Archivos
+
+Un **archivo** es un documento que puede estar asociado a un caso, a un cliente, a un gasto o a una tarea.{{ className: 'lead text-justify' }}
+
+### Funcionalidades
+
+Desde la sección de archivos podemos:
+
+1. Agregar un nuevo archivo.
+2. Ver un archivo.
+3. Eliminar un archivo.
+4. Navegar a la entidad relacionada.
+
+
+### Nuevo archivo
+
+Podemos subir un nuevo archivo desde el botón **nuevo archivo**. Un archivo puede estar relacionado con un **caso**, un **cliente**, un **gasto** o una **tarea**. {{ className: 'text-justify' }}
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={1101} height={887} />
+
+<Image src="/images/archivos-2.png" alt="Archivos" width={1097} height={448} />
+
+
+### Ver un archivo
+
+Podemos ver un archivo al hacer click en ver archivo.
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={1098} height={423} />
+
+
+### Copiar url de un archivo
+
+Desde el botón de copiar <ContentCopyIcon/> podemos copiar la url de un archivo.
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={700} height={500} />
+
+
+### Eliminar un archivo
+
+Desde el botón de eliminar <DeleteIcon/> podemos eliminar un archivo.
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={700} height={500} />
+
+
+### Navegar a la entidad relacionada
+
+Al hacer click en la entidad relacionada seremos redirigidos a la entidad a la que pertenece el archivo.
+
+<Image src="/images/archivos-1.png" alt="Archivos" width={700} height={500} />
+
+
+---
+
+## Procesos
+
+Un **proceso** se refiere a una serie estructurada y sistemática de acciones o pasos que se llevan a cabo de manera secuencial o simultánea para alcanzar un objetivo específico. Describen la serie de pasos que deben seguirse para tratar un caso en particular.{{className:'lead text-justify'}}
+
+Cada proyecto del sistema se clasifica según su tipo, que puede ser administrativo, judicial, laboral, entre otros. Cada tipo de proyecto conlleva procesos específicos asociados y cada proceso tiene procedimientos que se deben llevar a cabo.{{className:'lead text-justify'}}
+
+Un **procedimiento** puede entenderse como una guía o plantilla detallada que describe paso a paso cómo realizar una tarea específica de manera consistente y eficiente.
+Por ejemplo, si tengo un proyecto laboral, el proceso comúnmente conlleva ciertos procedimientos como la presentación de la demanda, notificación al empleador, entrevistas, etc.
+Al asignar tareas a un proyecto, si éste pertenece a un tipo que tiene un proceso definido con procedimientos específicos, podemos convertir directamente los procedimientos asociados a dicho proceso a tareas.{{className:'lead text-justify'}}
+
+Un proceso puede tener **procesos hijos**, es decir procesos que se desprenden de él. Al crear las tareas desde el proceso en el proyecto, si marcamos la última tarea como culminada se podrá seleccionar el proceso hijo siguiente. Esta metodología permite crear distintos caminos a través de los procesos dependientes del proyecto en cuestión.{{className:'lead text-justify'}}
+
+### Funcionalidades
+
+Desde el módulo de procesos podemos:
+
+1. Crear un nuevo proceso con sus correspondientes datos.
+2. Editar un proceso.
+3. Eliminar un proceso.
+4. Agregar procedimientos al proceso.
+5. Desde el listado de procedimientos podemos:
+
+- Agregar un nuevo procedimiento.
+- Editar un procedimiento.
+- Eliminar el procedimiento.
+- Cambiar el orden de los procedimientos.
+
+6. Asignar procesos hijos.
+
+
+### Nuevo proceso
+
+Desde el botón **crear proceso** podemos crear un nuevo proceso incluyendo nombre, descripción, departamento y staff relacionado. {{className: "text-justify"}}
+
+<Image src="/images/procesos-1.png" alt="Procesos" width={1097} height={946} />
+
+<Image src="/images/procesos-2.png" alt="Procesos" width={1053} height={740} />
+
+
+### Editar un proceso
+
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de un proceso.
+
+<Image src="/images/procesos-4.png" alt="Procesos" width={1055} height={737} />
+
+
+### Eliminar un proceso
+
+Desde el botón de eliminar <DeleteIcon/> podemos eliminar un proceso.
+
+<Image src="/images/procesos-1.png" alt="Procesos" width={1097} height={946} />
+
+### Vista detalle de un proceso
+
+Al clickear sobre el nombre del proceso, accedemos a la vista detallada de todos los procedimientos que conforman dicho proceso. Desde aquí podemos agregar nuevos procedimientos, editarlos, eliminarlos y cambiar su orden.
+
+<Image src="/images/procesos-5.png" alt="Procesos" width={1096} height={793} />
+
+### Agregar procedimientos a un proceso
+
+Desde el botón **agregar procedimiento** podemos crear un nuevo procedimiento incluyendo nombre, número de paso, descripción y dependencias correspondientes.
+Las dependencias señalan qué otros procedimientos dentro del mismo proceso son necesarios para llevar a cabo dicho procedimiento.{{className: "text-justify"}}
+
+Un procedimiento puede tener **acciones**. Las acciones posibles son: crear un gasto, mandar un request, enviar un email o llenar un campo.{{className: "text-justify"}}
+
+A su vez, el procedimiento puede tener **recordatorios**. Un recordatorio es una herramienta o función diseñada para ayudar a las personas a recordar eventos importantes, tareas pendientes o cualquier otra información relevante en un momento específico o de manera periódica. Este recordatorio se envía en forma de notificación al usuario seleccionado en la fecha y horario especificado para recordarle acerca de este procedimiento.{{className: "text-justify"}}
+
+<Image src="/images/procesos-6.png" alt="Procesos" width={1096} height={1007} />
+
+### Editar un procedimiento
+
+Desde el ícono de editar <ModeEditIcon /> podemos editar todos los datos de un procedimiento.
+
+<Image src="/images/procesos-7.png" alt="Procesos" width={1055} height={737} />
+
+### Cambiar el orden de los procedimientos
+
+Para cambiar el orden de los procedimientos, se utiliza la función de arrastrar y soltar. Cada procedimiento está identificado por un número secuencial de pasos. Al agregar uno nuevo, se asigna automáticamente el siguiente número secuencial disponible después del último procedimiento existente. No se permite la duplicación de números de paso entre procedimientos.{{className: "text-justify"}}
+
+---
+
+## Plantilla de emails
+
+Las **plantillas de emails** son un diseño predefinido y estructurado que se utiliza para crear mensajes de correo electrónico de manera consistente y profesional. Desde aquí podemos definir ante qué sucesos o acciones se envíe un email.{{className:'lead text-justify'}}
+
+### Funcionalidades
+
+Desde el módulo de plantilla de emails podemos: {{className:'text-justify'}}
+
+1. Habilitar o deshabilitar el envío de mails para determinados casos.
+2. Llenar la planilla de email.
+
+### Habilitar o deshabilitar el envío de emails
+
+Desde el listado de plantillas podemos habilitar o deshabilitar el envío de emails cuando se realizan ciertas acciones.{{className:'text-justify'}}
+
+<Image src="/images/emails-1.png" alt="Emails" width={1088} height={1240} />
+
+### Llenar la plantilla del email
+
+Podemos aplicar un formato al email, editar el remitente, cambiar su idioma, el asunto del email, personalizarlo con los campos que queremos mostrar, darle un formato en específico.{{className:'text-justify'}}
+
+<Image src="/images/emails-2.png" alt="Emails" width={1100} height={1390} />
+
+
+---
+
+## Plantilla de requests
+
+Las **plantillas de requests** son un diseño predefinido y estructurado que se utiliza para crear requests de manera consistente y profesional. Desde aquí podemos definir ante qué sucesos o acciones se envíe un request.{{className:'lead text-justify'}}
+
+### Funcionalidades
+
+Desde el módulo de plantilla de requests podemos: {{className:'text-justify'}}
+
+1. Crear un nuevo template.
+2. Editar un template.
+3. Borrar un template.
+
+### Crear un nuevo template
+
+Desde el botón nuevo template podemos crear un nuevo template.{{className:'text-justify'}}
+
+<Image src="/images/requests-1.png" alt="Emails" width={1088} height={1240} />
+<Image src="/images/requests-2.png" alt="Emails" width={1088} height={1240} />
+
+### Editar template
+
+Desde el botón editar <ModeEditIcon /> podemos editar un template.{{className:'text-justify'}}
+
+<Image src="/images/requests-1.png" alt="Emails" width={1088} height={1240} />
+
+### Eliminar template
+
+Desde el botón editar <DeleteIcon /> podemos eliminar un template.{{className:'text-justify'}}
+
+<Image src="/images/requests-1.png" alt="Emails" width={1088} height={1240} />
+---
+
+## Módulos
+
+### Funcionalidades
+
+Desde la sección módulo podemos: {{className:'text-justify'}}
+
+1. Editar los módulos del sistema.
+2. Eliminar modulos del sistema.
+
+### Editar módulos
+Desde el listado de módulos podemos editar un módulo en particular.
+
+<Image src="/images/modulos-1.png" alt="Emails" width={1100} height={1390} />
+<Image src="/images/modulos-2.png" alt="Emails" width={1100} height={1390} />
+
+### Eliminar módulos
+Desde el listado de módulos podemos eliminar un módulo en particular.
+
+<Image src="/images/modulos-3.png" alt="Emails" width={1100} height={1390} />
+
+---
+
+## Roles
+
+Desde la sección roles podemos: {{className:'text-justify'}}
+
+1. Crear nuevos roles en el sistema.
+2. Definir los permisos de los roles en el sistema.
+3. Eliminar roles del sistema.
+
+### Crear nuevo rol
+Desde el botón nuevo rol podemos crear un rol nuevo en el sistema.
+
+<Image src="/images/roles-1.png" alt="Emails" width={1100} height={1390} />
+<Image src="/images/roles-2.png" alt="Emails" width={1100} height={1390} />
+
+### Definir permisos del rol
+Haciendo click sobre el rol podemos definir los permisos de este en el sistema.
+
+<Image src="/images/roles-3.png" alt="Emails" width={1100} height={1390} />
+
+### Eliminar rol
+Desde el botón borrar podemos eliminar un rol del sistema.
+
+<Image src="/images/roles-1.png" alt="Emails" width={1100} height={1390} />
+---
+
