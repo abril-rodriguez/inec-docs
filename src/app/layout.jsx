@@ -7,8 +7,8 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - INEC',
-    default: 'INEC',
+    template: '%s - Brandfactors CRM',
+    default: 'Brandfactors CRM',
   },
 }
 
